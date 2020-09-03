@@ -7,8 +7,8 @@
 </template>
 
 <page-query>
-query {
-  event(id: "5") {
+query ($id: ID!) {
+  event(id: $id) {
     id
     title
     description
